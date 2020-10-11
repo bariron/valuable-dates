@@ -1,0 +1,23 @@
+print("add date")
+chislo = int(input())
+print("add month")
+mesyac = str(input())
+pritnt("add year")
+year = int(input())
+if chislo > 0:
+    if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+        if mesyac == "september" or "april" or "june" or "november" and chislo <= 30:
+            print("yes")
+        elif mesyac == "january" or "march" or "may" or "july" or "august" or "october" or "december" and chislo <= 31:
+            print("yes")
+        elif mesyac == "february" and chislo <= 29:
+            print("yes")
+    else:
+        if mesyac == "september" or "april" or "june" or "november" and chislo <= 30:
+            print("yes")
+        elif mesyac == "january" or "march" or "may" or "july" or "august" or "october" or "december" and chislo <= 31:
+            print("yes")
+        elif mesyac == "february" and chislo <= 28:
+            print("yes")
+else:
+    print("no")
